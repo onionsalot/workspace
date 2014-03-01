@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+>
+<TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="Welcome. Click StartService to start auto updating. Service will check every 30 seconds for new updates until CancelService is clicked." />
+  <Button
+           android:id="@+id/startalarm"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="StartService"
+            />
+    <Button
+            android:id="@+id/cancelalarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CancelService"
+            />
+        <Button
+            android:id="@+id/invisbutt"
+            android:enabled="false"
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Empty"
+            />
+
+<TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:id="@+id/feedtitle" />
+<TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:id="@+id/feeddescribtion" />
+<TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:id="@+id/feedpubdate" />
+<TextView
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:autoLink="web"
+android:id="@+id/feedlink" />
+<ListView
+android:id="@android:id/list"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" />
+<TextView
+android:id="@android:id/empty"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="No Data" />
+</LinearLayout>
